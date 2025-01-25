@@ -1,7 +1,6 @@
-# app.py
+from flask import Flask
+from urllib.parse import quote
 
-from flask import Flask 
-from urllib.parse import quote 
 
 def create_app():
     app = Flask(__name__)
@@ -11,6 +10,7 @@ def create_app():
         return 'GFGGGGGG'
 
     return app
+
 
 if __name__ == '__main__':
     app = create_app()
