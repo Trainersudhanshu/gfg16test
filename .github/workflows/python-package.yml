@@ -64,6 +64,11 @@ jobs:
         with:
           name: coverage-report
 
+      - name: Check if coverage.xml exists and is not empty
+        run: |
+          ls -l coverage.xml
+          cat coverage.xml
+
       - name: Run SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@v3
         env:
