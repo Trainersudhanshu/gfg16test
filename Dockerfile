@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 # Create a non-root user and group
-RUN groupadd -r appuser && useradd -r -g appuser appuser
+#RUN groupadd -r appuser && useradd -r -g appuser appuser
 
 # Set the working directory
 WORKDIR /app
@@ -13,7 +13,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Give the appuser full permissions on the /app directory
-RUN chown -R appuser:appuser /app
+RUN groupadd -r appuser && useradd -r -g appuser appuser && chown -R appuser:appuser /app
 
 # Expose port 80
 EXPOSE 80
