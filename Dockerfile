@@ -10,7 +10,10 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies as root user first (this step needs root permissions)
-RUN pip install -r requirements.txt && groupadd -r appuser && useradd -r -g appuser appuser && chown -R appuser:appuser /app
+RUN pip install -r requirements.txt && \
+    groupadd -r appuser && \
+    useradd -r -g appuser appuser && \
+    chown -R appuser:appuser /app
 
 # Give the appuser full permissions on the /app directory
 #RUN groupadd -r appuser && useradd -r -g appuser appuser && chown -R appuser:appuser /app
