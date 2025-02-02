@@ -19,7 +19,7 @@ def test_home(client):
     assert expected_text.encode() in response.data
 
 def test_test(client):
-    response=client.get('/')
+    response=client.get('/test')
     assert response.status_code == 200
     expected_text = 'test'
     assert expected_text.encode() in response.data
