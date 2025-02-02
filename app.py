@@ -3,7 +3,10 @@ from flask import Flask
 
 def create_app():
     app = Flask(__name__)
-
+    def hello():
+        print("hi")
+    def hello():
+        print("hi")
     @app.route('/')
     def home():
         print("inside home function")
