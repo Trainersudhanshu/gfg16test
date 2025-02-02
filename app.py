@@ -3,14 +3,9 @@ from flask import Flask
 
 def create_app():
     app = Flask(__name__)
-    def hello():
-        print("hi")
-    def hello():
-        print("hi")
     @app.route('/')
     def home():
         print("inside home function")
-        print("test123")
         return 'GFGGGGGG123'
     @app.route('/test')
     def test():
