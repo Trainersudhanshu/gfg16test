@@ -9,7 +9,7 @@ def create_app():
         print("inside home function")
         print("test123")
         return 'GFGGGGGG123'
-    @(app.route('/test')
+    @app.route('/test')
     def test():
         return 'test'
 
