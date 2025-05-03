@@ -8,11 +8,22 @@ def create_app():
     #     return 'testing'
     @app.route('/')
     def home():
+        x=10
+        y=20
+        z=30
         print("inside home function")
         return 'GFGGGGGG123'
     @app.route('/test')
     def test():
         return 'test'
+    @app.route('/gfg')
+    def home():
+        print("inside home function")
+        return 'GFGGGGGG123
+    @app.route('/gfg')
+    def home():
+        print("inside home function")
+        return 'GFGGGGGG123
 
     return app
 
