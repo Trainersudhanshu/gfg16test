@@ -20,7 +20,7 @@ def create_app():
     def home():
         print("inside home function")
         return 'GFGGGGGG123'
-    @app.route('/gfg')
+    @app.route('/gfg1')
     def home():
         print("inside home function")
         return 'GFGGGGGG123'
