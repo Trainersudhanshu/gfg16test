@@ -19,11 +19,11 @@ def create_app():
     @app.route('/gfg')
     def home():
         print("inside home function")
-        return 'GFGGGGGG123
+        return 'GFGGGGGG123'
     @app.route('/gfg')
     def home():
         print("inside home function")
-        return 'GFGGGGGG123
+        return 'GFGGGGGG123'
 
     return app
 
