@@ -17,11 +17,11 @@ def create_app():
     def test():
         return 'test'
     @app.route('/gfg')
-    def home():
+    def home1():
         print("inside home function")
         return 'GFGGGGGG123'
     @app.route('/gfg1')
-    def home():
+    def home2():
         print("inside home function")
         return 'GFGGGGGG123'
 
